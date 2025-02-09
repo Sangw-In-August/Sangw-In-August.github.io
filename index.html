@@ -20,6 +20,17 @@
 
 			gtag('config', 'G-M66DPLGNYX');
 		</script>
+		<!-- Google Analytics 코드 아래에 추가: 이 함수는 사용자가 클릭할 때마다 Google Analytics로 이벤트를 전송하는 역할 --> 
+		<script>
+			function trackPostView(postTitle) {
+			// Google Analytics 이벤트 추적
+			gtag('event', 'click_post', {
+				'event_category': 'blog',       // 이벤트 카테고리: 블로그
+				'event_label': postTitle        // 이벤트 레이블: 게시물 제목
+			});
+			}
+		</script>
+
 		
 		<style>
 			.nanum-bold {
@@ -70,37 +81,37 @@
 						<h2><strong class="nanum-bold-small">PORTFOLIO</strong></h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://sangw-in-august.github.io/business_district/" class="image fit thumb" target="_blank"><img src="images/thumbs/business_district.jpg" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
+								<a href="https://sangw-in-august.github.io/business_district/" class="image fit thumb" target="_blank" onclick="trackPostView('강남에서 창업하기 좋은 곳은? 데이터로 찾는 최적 입지')"><img src="images/thumbs/business_district.jpg" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
 								<h3 class="nanum-bold-nosize">강남에서 창업하기 좋은 곳은? 데이터로 찾는 최적 입지</h3>
 								<p class="nanum-regular">강남의 실제 상업 활동을 반영한 상권을 정의하고, 상권별 경쟁 정도를 고려해 최적의 입지선정을 위한 분석 수행</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://sangw-in-august.github.io/uci_online_retail/" class="image fit thumb" target="_blank"><img src="images/thumbs/uci_online_retail.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
+								<a href="https://sangw-in-august.github.io/uci_online_retail/" class="image fit thumb" target="_blank" onclick="trackPostView('UCI Retail 온라인 스토어 데이터 분석')"><img src="images/thumbs/uci_online_retail.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
 								<h3 class="nanum-bold-nosize">UCI Retail 온라인 스토어 데이터 분석</h3>
 								<p class="nanum-regular">온라인 스토어 운영 최적화 및 고객 만족도 개선을 목적으로 거래 데이터 심층 분석</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://sangw-in-august.github.io/discount_coupon/" class="image fit thumb" target="_blank"><img src="images/thumbs/discount_coupon.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
+								<a href="https://sangw-in-august.github.io/discount_coupon/" class="image fit thumb" target="_blank" onclick="trackPostView('할인 캠페인 성과: 할인 쿠폰 사용 패턴과 구매 행동 변화 탐구')"><img src="images/thumbs/discount_coupon.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
 								<h3 class="nanum-bold-nosize">할인 캠페인 성과: 할인 쿠폰 사용 패턴과 구매 행동 변화 탐구</h3>
 								<p class="nanum-regular">고객들의 할인 쿠폰 사용 패턴 및 쿠폰 사용 이후 구매 패턴의 변화를 분석</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://sangw-in-august.github.io/olist/" class="image fit thumb" target="_blank"><img src="images/thumbs/olist.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
+								<a href="https://sangw-in-august.github.io/olist/" class="image fit thumb" target="_blank" onclick="trackPostView('Olist 이커머스 플랫폼의 거래 데이터 분석')"><img src="images/thumbs/olist.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
 								<h3 class="nanum-bold-nosize">Olist 이커머스 플랫폼의 거래 데이터 분석</h3>
 								<p class="nanum-regular">Olist 이커머스 플랫폼의 실제 거래 데이터를 활용하여 플랫폼 성장 전략 설계</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://sangw-in-august.github.io/finance-senior/" class="image fit thumb" target="_blank"><img src="images/thumbs/finance-senior.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
+								<a href="https://sangw-in-august.github.io/finance-senior/" class="image fit thumb" target="_blank" onclick="trackPostView('데이터 기반 장년층 맞춤형 금융 솔루션')"><img src="images/thumbs/finance-senior.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
 								<h3 class="nanum-bold-nosize">데이터 기반 장년층 맞춤형 금융 솔루션</h3>
 								<p class="nanum-regular">장년층을 대상으로 자산, 소득, 투자 성향 등을 토대로 유형화 해보고 유형별 금융 솔루션 제안</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://sangw-in-august.github.io/telco-churn/" class="image fit thumb" target="_blank"><img src="images/thumbs/telco-thumbnail.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
+								<a href="https://sangw-in-august.github.io/telco-churn/" class="image fit thumb" target="_blank" onclick="trackPostView('통신사 고객 이탈 요인 탐색')"><img src="images/thumbs/telco-thumbnail.png" alt="" style="aspect-ratio: 16/9; width: 100%; object-fit: cover;" /></a>
 								<h3 class="nanum-bold-nosize">통신사 고객 이탈 요인 탐색</h3>
 								<p class="nanum-regular">고객의 성·연령, 이용 서비스, 이용 기간, 요금 등의 정보를 활용하여 이탈 요인 탐색</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://public.tableau.com/app/profile/sangwoo.seo/vizzes" class="image fit thumb" target="_blank"><img src="images/thumbs/tableau.jpg" alt="" /></a>
+								<a href="https://public.tableau.com/app/profile/sangwoo.seo/vizzes" class="image fit thumb" target="_blank" onclick="trackPostView('태블로 대시보드 시각화')"><img src="images/thumbs/tableau.jpg" alt="" /></a>
 								<h3 class="nanum-bold-nosize">태블로 대시보드 시각화</h3>
 								<p class="nanum-regular">대시보드 시각화 결과물</p>
 							</article>
